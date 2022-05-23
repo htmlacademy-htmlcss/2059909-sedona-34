@@ -5,18 +5,60 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <img src="img/logo.svg" alt="Логотип сайта городка Седона">
-        <ul>
-          <li><a href="index.html"> Главная</a> </li>
-          <li><a href="info.html">О Седоне</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
+    <header class="page-header">
+      <nav class="navigation">
+        <a>
+          <img src="img/logo.svg" alt="Логотип сайта городка Седона">
+        </a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html"> Главная</a>
+           </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="info.html">О Седоне</a>
+           </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="hotels.html">Гостиницы</a>
+           </li>
         </ul>
-        <button type="button" name="Хочу сюда!">ХОЧУ СЮДА!</button>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+           </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+           </li>
+          <li class="navigation-item">
+            <a class="navigation-link">
+              <span>12</span>
+            </a>
+            </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Хочу сюда!</a>
+           </li>
+        </ul>
       </nav>
     </header>
-    <main>
+
+    <main class="main-index">
+      <h1 class="visually-hidden">Городок Седона</h1>
+      <img class="logo" src="" alt="Добро пожаловать в небольшой городо Седона">
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <ol class="advantages-list">
+          <li class="advantages-item"></li>
+          <ul class="advantages-recommendation">
+            <li>Жилье</li>
+            <li>Еда</li>
+            <li>Сувениры</li>
+          </ul>
+        </ol>
+      </section>
+
     </main>
     <footer>
     </footer>
