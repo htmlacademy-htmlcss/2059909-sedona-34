@@ -93,7 +93,6 @@
           </li>
         </ul>
       </section>
-
       <section class="search-hotels">
   <h2 class="visually-hidden">Поиск гостиницы</h2>
   <h3 class="search-hotels-item">Заинтересовались?</h3>
@@ -105,12 +104,45 @@
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" metod="post">
           <p class="subscription-form-post">
-          <input type="text" name="email" placeholder="Ваш e-mail"></p>
+            <label for="newsletter-email" class="visually-hidden">Email</label>
+          <input class="field" type="email" name="newsletter-email" placeholder="Ваш e-mail" id="newsletter-email"></p>
           <button class="button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
-    <footer>
+
+    <footer class="page-footer">
+      <section class="footer-social">
+        <h2 class="visually-hidden">Наши соц.сети</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <a class="button" href="https://vk.com/htmlacademy">
+             <span class="visualy-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://t.me/htmlacademy">
+             <span class="visualy-hidden">Телеграмм</span>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+             <span class="visualy-hidden">youtube</span>
+            </a>
+          </li>
+        </ul>
+
+      </section>
+      <section class="footer-telephone-number">
+        <a class="contacts-number" href="tel.88128121212">+7 (812) 812-12-12</a>
+      </section>
+      <section class="footer-logo">
+        <h2 class="visually-hidden">логотип Академии</h2>
+        <a class="button" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">htmlacademy</span>
+        </a>
+      </section>
+
     </footer>
   </body>
 </html>
