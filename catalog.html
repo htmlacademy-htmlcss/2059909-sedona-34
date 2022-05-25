@@ -56,7 +56,7 @@
         </ul>
       </header>
       <h2 class="visualy-hidden">Фильтр гостиниц</h2>
-      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" metod="get">
+      <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
         <fieldset class="catalog-filter-group">
           <legend class="catalog-filter-title">Инфраструктура:</legend>
           <ul class="catalog-filter-list">
@@ -111,8 +111,8 @@
     </section>
 
     <section class="inner-catalog-search">
-      <h2 class="search-results">Рузультаты поиска</h2>
-      <p class="sorting">Найдетно гостиниц:<span>38</span></p>
+      <h2 class="search-results">Результаты поиска</h2>
+      <p class="sorting">Найдено гостиниц:<span>38</span></p>
       <select class="select-cotrol" aria-label="Сортировка">
         <option value="cheap">Сначала дешёвые</option>
         <option value="expensive">Сначала дорогие</option>
@@ -134,43 +134,51 @@
       <ul class="search-hotel-list">
         <li class="search-hotel-card">
           <a class="search-hotel-card-link" href="#">
-            <img class="search-hotel-card-image" src="" alt="">
+            <img class="search-hotel-card-image" src="#" alt="Фотография ночного звезного неба из пещеры">
             <h3 class="search-hotel-card-title">Amara Resort & Spa</h3>
           </a>
-          <span calss="search-hotel-card-list">Гостиница</span>
+          <span class="search-hotel-card-list">Гостиница</span>
           <span class="search-hotel-card-price">От 4000 ₽</span>
           <a class="search-hotel-card-button button" href="#">подробнее</a>
           <a class="search-hotel-card-button button" href="#">в избранное</a>
+          <img class="search-hotel-card-star-rating" src="#" alt="Четыре звезды">
+          <p class="search-hotel-card-rating">Рейтинг: 8,5</p>
         </li>
         <li class="search-hotel-card">
           <a class="search-hotel-card-link" href="#">
-            <img class="search-hotel-card-image" src="" alt="">
-            <h3 class="search-hotel-card-title">Amara Resort & Spa</h3>
+            <img class="search-hotel-card-image" src="#" alt="Фотография горы на фоне неба с радугой после дождя">
+            <h3 class="search-hotel-card-title">Villas at Poco Diablo</h3>
           </a>
-          <span calss="search-hotel-card-list">Гостиница</span>
+          <span class="search-hotel-card-list">Гостиница</span>
           <span class="search-hotel-card-price">От 5000 ₽</span>
           <a class="search-hotel-card-button button" href="#">подробнее</a>
           <a class="search-hotel-card-button button" href="#">в избранное</a>
+          <img class="search-hotel-card-star-rating" src="#" alt="Четыре звезды">
+          <p class="search-hotel-card-rating">Рейтинг: 9,2</p>
         </li>
         <li class="search-hotel-card">
           <a class="search-hotel-card-link" href="#">
-            <img class="search-hotel-card-image" src="" alt="">
-            <h3 class="search-hotel-card-title">Amara Resort & Spa</h3>
+            <img class="search-hotel-card-image" src="#" alt="Фоторграфия горы на фоне ясного неба">
+            <h3 class="search-hotel-card-title">Desert Quail Inn</h3>
           </a>
-          <span calss="search-hotel-card-list">Гостиница</span>
+          <span class="search-hotel-card-list">Гостиница</span>
           <span class="search-hotel-card-price">От 2500 ₽</span>
           <a class="search-hotel-card-button button" href="#">подробнее</a>
           <a class="search-hotel-card-button button" href="#">в избранное</a>
+          <img class="search-hotel-card-star-rating" src="#" alt="Три звезды">
+          <p class="search-hotel-card-rating">Рейтинг: 6,9</p>
         </li>
         <li class="search-hotel-card">
           <a class="search-hotel-card-link" href="#">
-            <img class="search-hotel-card-image" src="" alt="">
-            <h3 class="search-hotel-card-title">Amara Resort & Spa</h3>
+            <img class="search-hotel-card-image" src="#" alt="Фоторграфия горы на фоне звездного ночного неба">
+            <h3 class="search-hotel-card-title">GreenTree Inn</h3>
           </a>
-          <span calss="search-hotel-card-list">Гостиница</span>
+          <span class="search-hotel-card-list">Гостиница</span>
           <span class="search-hotel-card-price">От 1500 ₽</span>
           <a class="search-hotel-card-button button" href="#">подробнее</a>
           <a class="search-hotel-card-button button" href="#">в избранное</a>
+          <img class="search-hotel-card-star-rating" src="#" alt="Две звезды">
+          <p class="search-hotel-card-rating">Рейтинг: 5,0</p>
         </li>
       </ul>
     </section>
@@ -211,7 +219,7 @@
     <section class="subscription">
       <h2 class="subscription-item">Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-      <form class="subscription-form" action="https://echo.htmlacademy.ru/" metod="post">
+      <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="subscription-form-post">
           <label for="newsletter-email" class="visually-hidden">Email</label>
           <input class="field" type="email" name="newsletter-email" placeholder="Ваш e-mail" id="newsletter-email">
