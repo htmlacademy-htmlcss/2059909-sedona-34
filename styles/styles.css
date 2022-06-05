@@ -116,41 +116,28 @@ body {
   line-height: 28px;
 }
 
-.real-town {
+.dark-blue {
   background: #82B3D3;
   color: #FFFFFF;
 }
 
-.devil-bridge {
-  background: #82B3D3;
-  color: #FFFFFF;
-}
-
-.small-area {
+.light-blue {
   background: #f0f6fa;
   color: #000000;
 }
 
-.small-area .advanges-description {
+.advatages-recommendation-description {
   color: #333333;
 }
 
-.road {
+.blue {
   background: #e6f0f6;
   color: #000000;
 }
 
-.road .advanges-description {
-  color: #333333;
-}
-
-.few-tourists {
-  background: #f0f6fa;
+.white {
+  background: #ffffff;
   color: #000000;
-}
-
-.few-tourists .advanges-description {
-  color: #333333;
 }
 
 .advantages-recommendation-item {
@@ -168,12 +155,4 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-}
-
-.advatages-recommendation-description {
-  color: #333333;
-}
-
-.food {
-  background: #FFFFFF;
 }
