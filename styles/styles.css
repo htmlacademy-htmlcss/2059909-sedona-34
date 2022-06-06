@@ -55,14 +55,13 @@ body {
 }
 
 .navigation-user-item-link {
+  font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  color: #ffffff;
-  font-weight: 700;
-  background-color: #756157;
+  background: #756157;
   text-transform: uppercase;
   text-align: center;
-  text-decoration: none;
+  color: #FFFFFF;
 }
 
 .welcome-to-sedona {
@@ -116,6 +115,23 @@ body {
   line-height: 28px;
 }
 
+.advantages-recommendation-item {
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  background: #f0f6fa;
+  color: #000000;
+}
+
+.advantages-recommendation-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
 .dark-blue {
   background: #82B3D3;
   color: #FFFFFF;
@@ -140,19 +156,76 @@ body {
   color: #000000;
 }
 
-.advantages-recommendation-item {
+.search-hotels {
   font-family: "PT Sans", sans-serif;
   text-align: center;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 22px;
+  line-height: 26px;
   background: #f0f6fa;
+  color: #333333;
+}
+
+.search-hotels-item {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
   color: #000000;
 }
 
-.advantages-recommendation-title {
+.search-hotels-link {
+  background: #756157;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: 20px;
+  line-height: 36px;
   text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.subscription {
+  background-image: url(../images/background/background-index-subscription.jpg);
+  background-size: 100% auto;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.subscription-item {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.field {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.button {
+  background: #82B3D3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.footer-telephone-number {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  background: #FFFFFF;
 }
