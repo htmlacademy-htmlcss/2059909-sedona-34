@@ -98,7 +98,7 @@ body {
   overflow: hidden;
 }
 
-.advantages-item {
+.advantages-list {
   text-align: center;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
@@ -228,4 +228,112 @@ body {
   text-transform: uppercase;
   color: #000000;
   background: #FFFFFF;
+}
+
+.inner-catalog-filter {
+  background-image: url(../images/background/background-filter.jpg);
+  background-size: 100% auto;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.breadcrumbs-item-link {
+  background-image: url(../images/icons/union.svg);
+  color: #FFFFFF;
+}
+
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: capitalize;
+}
+
+.button-apply {
+  background: #82B3D3;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.button-settings {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+  background-color: inherit;
+}
+
+.inner-catalog-search {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.sorting {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.search-hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.search-hotel-card-button,
+.search-hotel-card-rating {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background: #F2F2F2;
+  border-radius: 4px;
+  color: #333333;
+}
+
+.more {
+  background: #756157;
+  color: #FFFFFF;
+}
+
+.to-favorits {
+  background: #82B3D3;
+  color: #FFFFFF;
+}
+
+.subscription-catalog {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+}
+
+.subscription-item-catalog {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
 }
