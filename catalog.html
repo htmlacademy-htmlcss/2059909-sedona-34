@@ -10,18 +10,18 @@
 <body>
   <header class="page-header">
     <nav class="navigation">
-      <a>
+      <a class="navigation-logo" href="index.html">
         <img src="images/logo.svg" width="139" height="70" alt="Логотип сайта городка Седона">
       </a>
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link"> Главная</a>
+          <a class="navigation-link" href="index.html"> Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="info.html">О Седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html">Гостиницы</a>
+          <a class="navigation-link navigation-link-current" href="catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-user">
@@ -38,13 +38,14 @@
             <span>12</span>
           </a>
         </li>
-        <li class="navigation-user-item-link">
-          <a class="navigation-user-link-button" href="#">Хочу сюда!</a>
+        <li class="navigation-user-item">
+          <div class="navigation-user-item-link">
+            <a class="navigation-user-link" href="catalog.html">Хочу сюда!</a>
+          </div>
         </li>
       </ul>
     </nav>
   </header>
-
   <main class="main-inner">
     <section class="inner-catalog-filter">
       <header class="inner-header">
@@ -53,11 +54,8 @@
         <img src="images/background/background-filter.jpg" width="1200" height="393" alt="Фотография коньона">
         -->
         <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-item-link" href="index.html">
-              <span class="visually-hidden">Главная</span>
-              <img src="images/icons/union.svg" width="12" height="12" alt="на главную">
-            </a>
+          <li class="breadcrumbs-item-link">
+            <a class="breadcrumbs-link visually-hidden" href="index.html">Главная</a>
           </li>
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Гостиницы</a>
@@ -275,7 +273,7 @@
         <li class="footer-social-item">
           <a class="button-social-vkontakte" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">Вконтакте</span>
-            <img class="social-vkontakte" src="images/social/vkontakte.svg" width="24" height="14" alt="Вконтакте">
+              <img class="social-vkontakte" src="images/social/vkontakte.svg" width="24" height="14" alt="Вконтакте">
           </a>
         </li>
         <li class="footer-social-item">
