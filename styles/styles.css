@@ -48,7 +48,6 @@ body {
   line-height: 26px;
   color: #000000;
   font-weight: 700;
-  background-color: #ffffff;
   text-transform: capitalize;
   text-decoration: none;
   text-align: center;
@@ -64,6 +63,10 @@ body {
   color: #FFFFFF;
 }
 
+.navigation-user-link-button {
+  color: #FFFFFF;
+  text-decoration: none;
+}
 .welcome-to-sedona {
   background-image: url(../images/background/background-index.jpg);
   background-size: 100% auto;
@@ -182,6 +185,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   border-radius: 4px;
+  text-decoration: none;
 }
 
 .subscription {
@@ -219,7 +223,7 @@ body {
   border-radius: 0px 10px 10px 0px;
 }
 
-.footer-telephone-number {
+.contacts-number {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 40px;
@@ -227,7 +231,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  background: #FFFFFF;
+  text-decoration: none;
 }
 
 .inner-catalog-filter {
@@ -237,11 +241,6 @@ body {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  color: #FFFFFF;
-}
-
-.breadcrumbs-item-link {
-  background-image: url(../images/icons/union.svg);
   color: #FFFFFF;
 }
 
@@ -293,11 +292,12 @@ body {
   color: #000000;
 }
 
-.search-hotel-card-title {
+.search-hotel-card-link {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
+  text-decoration: none;
 }
 
 .search-hotel-card-button,
@@ -309,6 +309,7 @@ body {
   background: #F2F2F2;
   border-radius: 4px;
   color: #333333;
+  text-decoration: none;
 }
 
 .more {
