@@ -30,7 +30,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -38,9 +46,24 @@ body {
   background-color: #ffffff;
 }
 
-.page-header {
-  color: #000000;
-  background: #FFFFFF;
+/*header*/
+
+.navigation {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation-list,
+.navigation-user {
+  width: 490px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-user {
+  max-width: 315px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -65,18 +88,38 @@ body {
   text-decoration: none;
 }
 
+/*main*/
+
+.main-container {
+  flex-grow: 1;
+}
+
+.index-container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 .welcome-to-sedona {
   background-image: url(../images/background/background-index.jpg);
   background-size: 100% auto;
 }
 
+.welcome {
+  display: block;
+  margin: 0 auto;
+}
+
+.background-divider {
+  display: block;
+  margin: 0 auto;
+}
+
 .description-sedona {
   text-align: center;
-  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   line-height: 26px;
-  background: #FFFFFF;
-  color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
 .main-index-title {
@@ -99,14 +142,22 @@ body {
   overflow: hidden;
 }
 
+/*преимущества*/
+
+.advantages {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
 .advantages-list {
+  width: 400px;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
-  background: #FFFFFF;
-  color: #000000;
 }
 
 .advantages-title {
@@ -114,16 +165,6 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-}
-
-.advantages-recommendation-item {
-  font-family: "PT Sans", sans-serif;
-  text-align: center;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  background: #f0f6fa;
-  color: #000000;
 }
 
 .advantages-recommendation-title {
@@ -157,6 +198,13 @@ body {
   color: #000000;
 }
 
+.street-sedona,
+.canyon-sedona {
+  width: 800px;
+}
+
+/*поиск гостиницы*/
+
 .search-hotels {
   font-family: "PT Sans", sans-serif;
   text-align: center;
@@ -186,6 +234,8 @@ body {
   text-decoration: none;
 }
 
+/*подписка на рассылку*/
+
 .subscription {
   background-image: url(../images/background/background-index-subscription.jpg);
   background-size: 100% auto;
@@ -211,6 +261,8 @@ body {
   color: #000000;
 }
 
+/*footer*/
+
 .button {
   background: #82B3D3;
   font-weight: 700;
@@ -219,6 +271,7 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   border-radius: 0px 10px 10px 0px;
+  border: none;
 }
 
 .contacts-number {
@@ -232,6 +285,8 @@ body {
   background: #FFFFFF;
   text-decoration: none;
 }
+
+/*фильтр гостиниц*/
 
 .inner-catalog-filter {
   background-image: url(../images/background/background-filter.jpg);
@@ -265,15 +320,19 @@ body {
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+  border: none;
 }
 
-.button-settings {
+.button-reset {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: #FFFFFF;
   background-color: inherit;
+  border: none;
 }
+
+/*найденные гостиницы,карточки гостиниц*/
 
 .inner-catalog-search {
   font-family: "PT Sans", sans-serif;
