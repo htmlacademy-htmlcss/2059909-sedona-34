@@ -188,6 +188,7 @@ body {
 .advantages-recommendation-item {
   text-align: center;
 }
+
 .advantages-title {
   width: 400px;
   text-transform: uppercase;
@@ -356,17 +357,71 @@ body {
 .inner-catalog-filter {
   background-image: url(../images/background/background-filter.jpg);
   background-size: 100% auto;
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #ffffff;
+  height: 298px;
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 35px 70px;
+}
+
+/*.catalog-filte-container {
+  display: flex;
+  flex-direction: column;
+  width: 1060px;
+  height: 260px;
+}*/
+
+.inner-header {
+  display: flex;
+  flex-direction: column;
+  width: 495px;
+  height: 109px;
+  margin: 0;
+  padding: 0;
 }
 
 .inner-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  padding: 0;
+  margin: 0;
+
+}
+
+.breadcrumbs {
+  display: flex;
+  margin: 10px 0 0 0;
+  padding: 0;
+  width: 111px;
+  justify-content: space-between;
+}
+
+.catalog-filter-main {
+  display: flex;
+  width: 1060px;
+  height: 149px;
+  padding: 40px 0 0 0;
+  justify-content: space-between;
+}
+
+.catalog-filter-group {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  width: 150px;
+  height: 149px;
+}
+
+.type {
+  width: 146px;
 }
 
 .catalog-filter-title {
@@ -374,6 +429,16 @@ body {
   font-size: 20px;
   line-height: 26px;
   text-transform: capitalize;
+  border: none;
+}
+
+.catalog-filter-button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 519px;
+  height: 148px;
 }
 
 .button-apply {
@@ -386,6 +451,9 @@ body {
   text-transform: uppercase;
   color: #ffffff;
   border: none;
+  display: block;
+  width: 160px;
+  height: 48px;
 }
 
 .button-reset {
@@ -395,16 +463,34 @@ body {
   color: #ffffff;
   background-color: inherit;
   border: none;
+  display: block;
+  width: 160px;
+  height: 48px;
 }
 
 /*найденные гостиницы,карточки гостиниц*/
 
+.catalog-search {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  height: 1212px;
+  margin: 0 auto;
+  padding: 0;
+  align-items: center;
+}
+
 .inner-catalog-search {
-  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+  display: flex;
+  width: 1057px;
+  height: 49px;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
 }
 
 .sorting {
@@ -413,6 +499,37 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.search-hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 56px 0 0 0;
+  width: 1056px;
+  height: 876px;
+  justify-content: flex-start;
+}
+
+.search-hotel-card-list {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.search-hotel-card-item,
+.search-hotel-card-price {
+  display: block;
+  width: 140px;
+}
+
+.search-hotel-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 340px;
+  height: 438px;
+  align-content: center;
 }
 
 .search-hotel-card-link {
@@ -425,6 +542,10 @@ body {
 
 .search-hotel-card-button,
 .search-hotel-card-rating {
+  display: block;
+  width: 140px;
+  height: 37px;
+  text-align: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -435,6 +556,13 @@ body {
   text-decoration: none;
 }
 
+.hotel-card-button {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  width: 300px;
+}
+
 .more {
   background: #756157;
   color: #ffffff;
@@ -443,6 +571,73 @@ body {
 .to-favorits {
   background: #82b3d3;
   color: #ffffff;
+}
+
+.rating {
+  display: flex;
+  width: 300px;
+  height: 37px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-hotel-card-star-rating {
+  display: block;
+}
+
+.hotel-pagination {
+  display: flex;
+  width: 1056px;
+  height: 56px;
+  margin: 0;
+  padding-top: 96px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pagination-item {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: #82B3D3;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.pagination-link {
+  text-decoration: none;
+}
+
+.hotel-pagination-list {
+  display: flex;
+  width: 386px;
+  height: 49px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotel-pagination-item {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-pagination-item-cotrol {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 160px;
+  height: 49px;
 }
 
 .subscription-catalog {
