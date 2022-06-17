@@ -51,22 +51,34 @@ body {
 .navigation {
   display: flex;
   width: 1200px;
+  height: 65px;
   margin: 0 auto;
 }
 
 .navigation-list,
 .navigation-user {
+  display: flex;
+  flex-wrap: wrap;
   width: 490px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .navigation-user {
   max-width: 315px;
   margin-left: auto;
+  align-items: center;
+}
+
+.navigation-user .navigation-link {
+  min-width: 18px;
+  min-height: 18px;
 }
 
 .navigation-link {
+  display: block;
+  padding: 20px;
   font-size: 20px;
   line-height: 26px;
   color: #000000;
@@ -164,18 +176,22 @@ body {
 .first-line {
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
 }
 
 .second-line {
   display: flex;
+  list-style-type: none;
 }
 
 .third-line {
   display: flex;
+  list-style-type: none;
 }
 
 .fourth-line {
   display: flex;
+  list-style-type: none;
 }
 
 .advantages-list {
@@ -186,23 +202,41 @@ body {
 
 .advantages-item,
 .advantages-recommendation-item {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.ok {
+  width: 230px;
+  margin: 92px 85px;
 }
 
 .advantages-title {
-  width: 400px;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .advantages-recommendation-title {
-  width: 400px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
+  margin: 0;
+}
+
+.number {
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.advantages-description {
+  margin: 0;
 }
 
 .dark-blue {
@@ -217,6 +251,7 @@ body {
 
 .advatages-recommendation-description {
   color: #333333;
+  margin: 0;
 }
 
 .blue {
@@ -322,6 +357,7 @@ body {
   justify-content: space-around;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .button {
@@ -433,7 +469,6 @@ body {
   justify-content: flex-end;
   align-items: flex-end;
   width: 519px;
-  height: 148px;
 }
 
 .button-apply {
