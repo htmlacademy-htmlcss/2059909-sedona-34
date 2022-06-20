@@ -89,15 +89,26 @@ body {
   text-align: center;
 }
 
+.navigation-user-item {
+  flex-grow: 1;
+}
+
+.navigation-user-item-link {
+  background: #756157;
+  display: block;
+  width: 160px;
+  height: 37px;
+  text-align: center;
+  border-radius: 4px;
+}
+
 .navigation-user-link-button {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
-  background: #756157;
-  text-transform: uppercase;
-  text-align: center;
-  color: #ffffff;
-  text-decoration: none;
 }
 
 /*main*/
@@ -208,9 +219,18 @@ body {
   flex-grow: 1;
 }
 
-.ok {
+.advantages-text {
   width: 230px;
   margin: 92px 85px;
+}
+
+.advantages-recommendation-text {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  margin: 80px 85px 81px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .advantages-title {
@@ -228,6 +248,7 @@ body {
   line-height: 28px;
   text-transform: uppercase;
   margin: 0;
+  margin-top: 30px;
 }
 
 .number {
@@ -237,6 +258,11 @@ body {
 
 .advantages-description {
   margin: 0;
+}
+
+.advantages-recommendation-description {
+  margin: 0;
+  margin-top: 30px;
 }
 
 .dark-blue {
@@ -276,7 +302,7 @@ body {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
-  background: #f0f6fa;
+  background: #ffffff;
   color: #333333;
   height: 417px;
   margin: 0;
@@ -289,6 +315,12 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+  margin-top: 91px;
+  margin-bottom: 29px;
+}
+
+.search-hotels-title {
+  margin-bottom: 56px;
 }
 
 .search-hotels-link {
@@ -300,6 +332,10 @@ body {
   color: #ffffff;
   border-radius: 4px;
   text-decoration: none;
+  display: block;
+  width: 574px;
+  height: 60px;
+  margin: 0 auto;
 }
 
 /*подписка на рассылку*/
@@ -321,6 +357,12 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  margin-top: 94px;
+  margin-bottom: 29px;
+}
+
+.subscription-title {
+  margin-bottom: 46px;
 }
 
 .field {
