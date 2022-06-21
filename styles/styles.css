@@ -451,8 +451,6 @@ body {
 .inner-header {
   display: flex;
   flex-direction: column;
-  width: 495px;
-  height: 109px;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -471,6 +469,7 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .breadcrumbs-item {
@@ -503,6 +502,10 @@ body {
   line-height: 26px;
   text-transform: capitalize;
   border: none;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
 }
 
 .catalog-filter-button {
@@ -589,22 +592,17 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 340px;
-  flex-grow: 1;
 }
 
 .search-hotel-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-content: center;
   margin: 20px;
-  flex-shrink: 1;
+  width: 300px;
 }
 
 .search-hotel-card-list {
   display: flex;
-  width: 300px;
   justify-content: space-between;
 }
 
@@ -657,8 +655,6 @@ body {
 
 .rating {
   display: flex;
-  width: 300px;
-  height: 37px;
   align-items: center;
   justify-content: space-between;
 }
@@ -691,7 +687,6 @@ body {
   margin: 0;
   padding: 0;
   width: 400px;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -701,7 +696,7 @@ body {
   height: 60px;
   background-color: #82B3D3;
   border-radius: 4px;
-  text-align: center;
+  margin-left: 8px;
 }
 
 .pagination-link {
