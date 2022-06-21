@@ -51,7 +51,7 @@ body {
 .navigation {
   display: flex;
   width: 1200px;
-  height: 65px;
+  min-height: 65px;
   margin: 0 auto;
 }
 
@@ -95,10 +95,6 @@ body {
 
 .navigation-user-item-link {
   background: #756157;
-  display: block;
-  width: 160px;
-  height: 37px;
-  text-align: center;
   border-radius: 4px;
 }
 
@@ -109,6 +105,12 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  display: inline-block;
+  width: 160px;
+  height: 37px;
+  box-sizing: border-box;
+  padding: 9px 15px 8px;
+  text-align: center;
 }
 
 /*main*/
@@ -332,10 +334,13 @@ body {
   color: #ffffff;
   border-radius: 4px;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   width: 574px;
   height: 60px;
   margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 12px 15px;
 }
 
 /*подписка на рассылку*/
@@ -365,11 +370,22 @@ body {
   margin-bottom: 46px;
 }
 
+.subscription-form-post {
+  margin: 0;
+  padding: 0;
+}
+
 .field {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
   color: #000000;
+  border: 0;
+  border-radius: 10px 0px 0px 10px;
+  width: 600px;
+  height: 60px;
+  padding: 0;
+  margin: 0px 400px 0px 200px;
 }
 
 /*footer*/
@@ -390,16 +406,18 @@ body {
 
 .footer-social {
   width: 150px;
-  height: 50px;
   padding: 0;
 }
 
 .footer-social-list {
   display: flex;
-  justify-content: space-around;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.footer-social-item {
+  margin-left: 20px;
 }
 
 .button {
@@ -471,10 +489,12 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .breadcrumbs-item {
   margin-left: 25px;
+
 }
 
 .catalog-filter-main {
@@ -491,6 +511,11 @@ body {
   border: none;
   width: 150px;
   height: 149px;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
+  padding: 0;
 }
 
 .type {
@@ -560,7 +585,6 @@ body {
   color: #333333;
   display: flex;
   width: 1057px;
-  justify-content: space-between;
   align-items: flex-start;
   flex-grow: 1;
 }
@@ -573,7 +597,21 @@ body {
   color: #000000;
   margin: 0;
   padding: 0;
+  margin-right: 191px;
 }
+
+.select-control {
+  display: block;
+  margin-right: 78px;
+  width: 290px;
+  height: 50px;
+}
+
+.button-icon {
+  margin-left: 40px;
+}
+
+/*карточка отеля*/
 
 .search-hotel {
   display: flex;
