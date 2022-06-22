@@ -51,7 +51,7 @@ body {
 .navigation {
   display: flex;
   width: 1200px;
-  height: 65px;
+  min-height: 65px;
   margin: 0 auto;
 }
 
@@ -95,10 +95,6 @@ body {
 
 .navigation-user-item-link {
   background: #756157;
-  display: block;
-  width: 160px;
-  height: 37px;
-  text-align: center;
   border-radius: 4px;
 }
 
@@ -109,6 +105,12 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+  display: inline-block;
+  width: 160px;
+  height: 37px;
+  box-sizing: border-box;
+  padding: 9px 15px 8px;
+  text-align: center;
 }
 
 /*main*/
@@ -332,10 +334,13 @@ body {
   color: #ffffff;
   border-radius: 4px;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   width: 574px;
   height: 60px;
   margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 12px 15px;
 }
 
 /*подписка на рассылку*/
@@ -365,11 +370,22 @@ body {
   margin-bottom: 46px;
 }
 
+.subscription-form-post {
+  margin: 0;
+  padding: 0;
+}
+
 .field {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  background-color: #F2F2F2;
   color: #000000;
+  border: 0;
+  border-radius: 10px 0px 0px 10px;
+  width: 600px;
+  height: 60px;
+  margin: 0px 400px 0px 200px;
 }
 
 /*footer*/
@@ -390,16 +406,18 @@ body {
 
 .footer-social {
   width: 150px;
-  height: 50px;
   padding: 0;
 }
 
 .footer-social-list {
   display: flex;
-  justify-content: space-around;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.footer-social-item {
+  margin-left: 20px;
 }
 
 .button {
@@ -451,8 +469,6 @@ body {
 .inner-header {
   display: flex;
   flex-direction: column;
-  width: 495px;
-  height: 109px;
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
@@ -471,10 +487,12 @@ body {
   display: flex;
   margin: 0;
   padding: 0;
+  list-style-type: none;
 }
 
 .breadcrumbs-item {
   margin-left: 25px;
+
 }
 
 .catalog-filter-main {
@@ -493,6 +511,11 @@ body {
   height: 149px;
 }
 
+.catalog-filter-list {
+  list-style-type: none;
+  padding: 0;
+}
+
 .type {
   width: 146px;
 }
@@ -503,6 +526,10 @@ body {
   line-height: 26px;
   text-transform: capitalize;
   border: none;
+}
+
+.catalog-filter-list {
+  list-style-type: none;
 }
 
 .catalog-filter-button {
@@ -560,7 +587,6 @@ body {
   color: #333333;
   display: flex;
   width: 1057px;
-  justify-content: space-between;
   align-items: flex-start;
   flex-grow: 1;
 }
@@ -573,7 +599,21 @@ body {
   color: #000000;
   margin: 0;
   padding: 0;
+  margin-right: 191px;
 }
+
+.select-control {
+  display: block;
+  margin-right: 78px;
+  width: 290px;
+  height: 50px;
+}
+
+.button-icon {
+  margin-left: 24px;
+}
+
+/*карточка отеля*/
 
 .search-hotel {
   display: flex;
@@ -589,23 +629,29 @@ body {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  width: 340px;
-  flex-grow: 1;
 }
 
 .search-hotel-card {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  align-content: center;
   margin: 20px;
-  flex-shrink: 1;
+  width: 300px;
+}
+
+.search-hotel-card-image {
+  margin-bottom: 16px;
+  padding: 0;
+}
+
+.search-hotel-card-title {
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .search-hotel-card-list {
   display: flex;
-  width: 300px;
   justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .search-hotel-card-item,
@@ -624,7 +670,9 @@ body {
 
 .search-hotel-card-button,
 .search-hotel-card-rating {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 140px;
   height: 37px;
   text-align: center;
@@ -641,7 +689,7 @@ body {
 .hotel-card-button {
   display: flex;
   justify-content: space-between;
-  padding: 16px 0;
+  margin-bottom: 16px;
   width: 300px;
 }
 
@@ -657,8 +705,6 @@ body {
 
 .rating {
   display: flex;
-  width: 300px;
-  height: 37px;
   align-items: center;
   justify-content: space-between;
 }
@@ -674,6 +720,8 @@ body {
 .search-hotel-card-rating {
   margin: 0;
 }
+
+/*пагинация*/
 
 .hotel-pagination {
   display: flex;
@@ -691,21 +739,31 @@ body {
   margin: 0;
   padding: 0;
   width: 400px;
-  justify-content: space-between;
   align-items: center;
 }
 
 .pagination-item {
-  display: block;
-  width: 60px;
-  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 60px;
+  min-height: 60px;
   background-color: #82B3D3;
   border-radius: 4px;
-  text-align: center;
+  margin-left: 8px;
+}
+
+.pagination-item:nth-of-type(1) {
+  background-color:#F2F2F2;
 }
 
 .pagination-link {
   text-decoration: none;
+  color: #ffffff;
+}
+
+.pagination-current {
+  color: #000000;
 }
 
 .hotel-pagination-list {
