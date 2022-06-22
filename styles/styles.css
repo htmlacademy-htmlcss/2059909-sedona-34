@@ -55,6 +55,17 @@ body {
   margin: 0 auto;
 }
 
+.logo {
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.header-logo {
+  display: block;
+  margin: -5px;
+}
+
 .navigation-list,
 .navigation-user {
   display: flex;
