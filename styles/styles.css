@@ -467,6 +467,28 @@ body {
   width: 200px;
 }
 
+.button-social-link {
+  display: block;
+  background-color: #82b3d3;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-social-vkontakte {
+  background-image: url(../images/social/vkontakte.svg);
+  background-size: 24px 14px;
+}
+
+.button-social-telegram {
+  background-image: url(../images/social/telegram.svg);
+  background-size: 18px 15px;
+}
+
+.button-social-youtube {
+  background-image: url(../images/social/youtube.svg);
+  background-size: 22px 17px;
+}
+
 .contacts-number {
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
