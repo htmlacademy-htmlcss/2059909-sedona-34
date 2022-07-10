@@ -144,6 +144,15 @@ body {
   border-radius: 4px;
 }
 
+.navigation-user-item-link:focus,
+.navigation-user-item-link:hover {
+  background-color: #615048;
+}
+
+.navigation-use-item-link:disabled {
+  background-color: #E5E5E5;
+}
+
 .navigation-user-link-button {
   text-decoration: none;
   text-transform: uppercase;
@@ -156,6 +165,10 @@ body {
   box-sizing: border-box;
   padding: 9px 15px 8px;
   text-align: center;
+}
+
+.navigation-user-link-button:active {
+  opacity: 0.3;
 }
 
 /*main*/
@@ -404,6 +417,19 @@ body {
   padding: 12px 15px;
 }
 
+.search-hotels-link:hover,
+.search-hotels-link:focus {
+  background-color: #615048;
+}
+
+.search-hotels-link-text:active {
+  opacity: 0.3;
+}
+
+.search-hotels-link:disabled {
+  background-color: #E5E5E5;
+}
+
 /*подписка на рассылку*/
 
 .subscription {
@@ -454,6 +480,19 @@ body {
   margin: 0;
   padding: 20px 488px 19px 22px;
   box-sizing: border-box;
+}
+
+.button-email:hover,
+.button-email:focus {
+  background-color: #68A2CA;
+}
+
+.button-email:disabled {
+  background-color: #E5E5E5;
+}
+
+.button-email-text:active {
+  opacity: 0.3;
 }
 
 /*footer*/
@@ -624,7 +663,7 @@ body {
   display: flex;
   width: 1060px;
   padding: 0;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .catalog-filter-group {
@@ -636,13 +675,19 @@ body {
   height: 149px;
 }
 
+.infra {
+  margin-right: 70px;
+}
+
 .catalog-filter-list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .type {
   width: 146px;
+  margin-right: 175px;
 }
 
 .catalog-filter-title {
@@ -651,15 +696,121 @@ body {
   line-height: 26px;
   text-transform: capitalize;
   border: none;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
-.catalog-filter-list {
-  list-style-type: none;
+.catalog-filter-item:not(:first-child) {
+  margin-top: 15px;
+}
+
+/*Ползунок стоимости*/
+
+.catalog-filter-range {
+  margin-right: 70px;
+  flex-grow: 1;
+}
+
+.catalog-filter-group-range {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.range {
+  margin-top: 4px;
+  margin-bottom: 24px;
+}
+
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.range-wrapper-inputs {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 32px;
+}
+
+.catalog-filter-label {
+  display: flex;
+  margin: 0;
+}
+
+.range-input {
+  position: relative;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  padding: 0 2px;
+  font: inherit;
+  background-color: transparent;
+  height: 48px;
+  width: 144px;
+  border: 2px solid #FFFFFF;
+  border-radius: 4px 0px 0px 4px;
+  appearance: textfield;
+}
+
+.range-max {
+  position: absolute;
+  margin-left: -2px;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: #ffffff;
+  opacity: 0.3;
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.range-toggle:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83B3D3;
+}
+
+.toggle-min {
+  top: -8px;
+  left: -10px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -10px;
+}
+
+
+/*Кнопка применить и сбросить*/
+
+.buttons {
+  display: flex;
+  flex-direction: column;
 }
 
 .catalog-filter-button {
   display: flex;
-  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: flex-end;
   width: 519px;
@@ -681,6 +832,19 @@ body {
   padding: 14px 15px;
 }
 
+.button-apply:focus,
+.button-apply:hover {
+  background: #68A2CA;
+}
+
+.button-apply:disabled {
+  background: #E5E5E5;
+}
+
+.button-apply-text:active {
+  opacity: 0.3;
+}
+
 .button-reset {
   font-weight: 400;
   font-size: 16px;
@@ -688,10 +852,25 @@ body {
   color: #ffffff;
   background-color: inherit;
   border: none;
+  border-radius: 4px;
   display: inline-block;
   box-sizing: border-box;
   width: 160px;
   padding: 14px 15px;
+}
+
+.button-reset-text:hover {
+  opacity: 0.6;
+}
+
+.button-reset:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
+  align-items: inside;
+}
+
+.button-reset-text:active {
+  opacity: 0.3;
 }
 
 /*найденные гостиницы,карточки гостиниц*/
