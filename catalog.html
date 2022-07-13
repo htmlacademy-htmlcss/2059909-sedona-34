@@ -80,8 +80,8 @@
       </header>
       <h2 class="visually-hidden">Фильтр гостиниц</h2>
       <div class="catalog-filter-main">
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter-group infra">
+        <form class="catalog-filter infra" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -105,8 +105,8 @@
             </ul>
           </fieldset>
         </form>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="catalog-filter-group type">
+        <form class="catalog-filter type" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Тип жилья:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
@@ -137,11 +137,12 @@
               <legend class="catalog-filter-title">Стоимость,₽:</legend>
               <div class="range">
                 <div class="range-wrapper-inputs">
-                  <label class="catalog-filter-label">
-                    <input type="number" class="range-input" type="number" value="0" name="min-price" placeholder="от">
+                  <label for="min-price" class="catalog-filter-label">
+                    <input type="number" class="range-input" type="number" value="0" name="min-price" placeholder="от" id="min-price">
                   </label>
-                  <label class="catalog-filter-label">
-                    <input type="number" class="range-input range-max" type="number" value="9000" name="max-price" placeholder="до">
+                  <label  for="max-price" class="catalog-filter-label">
+                    <input type=" number" class="range-input range-max" type="number" value="9000" name="max-price"
+                    placeholder="до" id="max-price">
                   </label>
                 </div>
                 <div class="range-scale">
