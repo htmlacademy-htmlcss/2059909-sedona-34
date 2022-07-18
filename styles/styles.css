@@ -290,7 +290,7 @@ body {
   position: relative;
 }
 
-.second-line .advantages-recommendation-item:nth-child(3) .advantages-recommendation-text {
+.advantages-recommendation-item:nth-child(3) .advantages-recommendation-text {
   background-image: url(../images/icons/advantages-index-present.svg);
   background-repeat: no-repeat;
   background-position: center bottom 150px;
